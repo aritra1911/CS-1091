@@ -1,0 +1,19 @@
+To get familiar with gedit editor to create a new file, read the contents of a
+file, write into a file or modify the contents of a file.
+gedit:
+    Text Editor (gedit) is the default GUI text editor in the Ubuntu operating
+    system
+    1. To create a new file in c (first.c), run the following in command prompt.
+        $ gedit first.c
+        It will open the gedit editor window with the name first.c where you can
+        write anything
+        (program code for first.c).
+        Then save the contents of this file by choosing the appropriate options
+        from gedit menu as follows:
+        File → Save
+        Now quit from gedit window and return to command prompt, do the
+        following:
+        File → Exit
+    2. To open an existing file (say first.c) for editing do the following:
+        $ gedit first.c
+        After editing will be over, save the file and quit from gedit window.

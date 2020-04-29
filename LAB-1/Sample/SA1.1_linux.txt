@@ -1,0 +1,194 @@
+To get familiar with LINUX/UNIX (UBUNTU) Operating System and practice some
+frequently used
+commands on terminal (command prompt).
+LINUX/UNIX COMMANDS
+$ _ Command Prompt
+Anything written within [ ] is optional.
+Sl.
+No.
+Comma
+nd
+Description Example
+1. man Manual
+Syntax
+man commandName
+It displays an on-line manual page
+for a command that it gives detailed
+information of a command how to
+use it.
+$ man ls
+It gives the manual page of ls command
+$ man pwd
+You will see the manual for the pwd
+command.
+2. ls List
+Syntax
+ls [option(s)] [file(s)]
+It lists the contents of a directory,
+and can be used to obtain
+information on the files and
+directories within it.
+$ ls
+It lists the files & subdirectories available
+in the current directory.
+$ ls -l
+Same as above except it lists the files
+'long format', which contains lots of
+useful information, e.g. the exact size of
+the file, who owns the file and who has
+the right to look at it, and when it was last
+modified.
+$ ls dir1
+It lists the files & subdirectories available
+in dir1.
+3. pwd Print Working Directory
+Syntax
+pwd
+$ pwd
+It tells you where you currently are,
+in which directory.
+It Shows the current location in the
+directory tree. In other words, the
+command gives the full pathname of
+your current directory.
+4. cd Change Directory
+Syntax
+cd [options(s)] [directory]
+It changes the current directory to
+other directory depending on the
+options and/or name of the directory.
+$ cd
+It changes to the user's home
+directory.
+$ cd ~
+Same as above.
+$ cd dir1
+It changes to the directory dir1 if
+dir1 is a sub directory of your
+current working directory.
+$ cd /home/user1/kiit/csit
+It changes to csit directory as mentioned
+in the full path from your current
+working directory.
+$ cd ..
+It simply move up one directory. For
+example, if you are in
+/home/user1/kiit/csit and you type
+“cd ..”, you will end up in
+/home/user1/kiit
+After applying cd .. yoi can verifywith
+pwd command.
+5. mkdir Make Directory
+Syntax
+mkdir [option(s)] directoryName
+It creates a new directory.
+$ mkdir sce
+It creates a new directory named as sce
+under your current directory. After
+executing this command, check through
+ls whether sce directory is created or not.
+If you want to create a new directory
+under other than your current directory,
+then mention the full path name before
+the new directory name. As for example,
+if your current working directory is
+/home/user1/kiit, but you want to create a
+new directory named as ece under
+/home/user1/kiit/setce, then ececute the
+following command:
+$ mkdir /home/user1/kiit/setce/ece
+6. cp Copy
+Syntax
+$ cp file1 file2
+It copies the contents of the file file1 into
+cp [option(s)] sourcefile targetfile
+Copies sourcefile to targetfile. Both
+file will be present.
+a new file called file2. If you apply ls
+command, it will show you both the files.
+$ cp ak.txt bk.txt dir1
+It creates copies of files ak.txt and bk.txt
+(with the same names), within the
+directory dir1. dir1 must already exist for
+the copying to succeed.
+$ cp file1 /home/user1/kiit/scive
+It copies the contents of the file file1 into
+the directory scive with the same name.
+$ cp -r dir1 dir2
+It recursively copies the directory dir1,
+together with its contents and
+subdirectories, to the directory dir2.
+$ cp -i quard.c quradeq.c
+It waits for confirmation, if necessary,
+before an existing targetfile quardeq.c is
+overwritten. quard.c is copied as
+quradeq.c. Now If you apply ls command
+Then it will show you both the files
+quard.c and quradeq.c.
+7. mv Move
+Syntax
+mv [option(s)] sourcefile targetfile
+It moves a file to a new location, or
+renames it. Source file name will be
+deleted.
+$ mv info.txt itstudentsdata.txt
+It simply renames the file info.txt as
+itstudentsdata.txt . info.txt is deleted
+and only file available in current
+directory is itstudentsdta.txt.
+$ mv -b info.txt itstudentsdata.txt
+It ceates a backup copy of the sourcefile
+info.txt before moving it to
+itstudentsdata.txt. It is similar to cp
+command.
+$ mv /home/user1/kiit/sce/it/first.c
+home/user1/kiit/sme
+It simply move or transfer the file first.c
+into sme directory, no matter where is
+your current directory as both source and
+destination paths are mentioned.
+$ mv /home/user1/kiit/sce/it/first.c
+home/user1/kiit/sme/firstcprog.c
+It simply move or transfer the file first.c
+into sme directory with a new name
+firstcprog.c
+$ mv -i quard.c quradeq.c
+It waits for confirmation, if necessary,
+before an existing targetfile quardeq.c is
+overwritten. quard.c is renamed as
+quradeq.c. Now If you apply ls command
+Then it will show you only quradeq.c.
+8. rm Remove
+Syntax
+rm [option(s)] file(s)
+It removes the specified files from
+the file system. Directories are not
+removed by rm unless the option -r is
+used.
+$ rm quard.c
+It deleted the file quard.c available in the
+current directory.
+$ rm –i quard.c
+It waits for confirmation before deleting
+quard.c
+9. rmdir Remove Directory
+Syntax
+rmdir [option(s)] directoryName
+It deletes the specified directory,
+provided it is already empty.
+$ rmdir dir1
+If dir1 is empty, then it deletes the
+directory dir1 present under current
+directory.
+10. whereis Syntax
+whereis file
+It shows possible locations of
+file.
+$ whereis quard.c
+It shows you the location of the quard.c
+file.
+Other LINUX/UNIX Commands (to know the detail about the following command use
+man)
+date, cat, tail, which, locate, find, ps, id, du, clear, echo, grep, sot, su,
+ln, kill, chmod, ssh, tar, gzip,
+ping etc.
