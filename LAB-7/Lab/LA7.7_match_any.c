@@ -34,7 +34,7 @@ int match_any(char* str1, char* str2) {
     for (char* p=str1; len(p)>=l2; p++)
         for (int i=0; ; i++) {
             if (str2[i] == '\0') {
-                if (p == str1) return 0;
+                if (p == str1 && str1[i] == '\0') return 0;
                 return 1;
             }
             if (p[i] != str2[i]) break;
